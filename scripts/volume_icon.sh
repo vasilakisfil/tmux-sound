@@ -19,25 +19,25 @@ print_icon() {
 
   if [[ $value == 0 ]]; then
     printf "$icon_0"
-  elif [[ $value < 10 ]]; then
+  elif [[ $value -lt 10 ]]; then
     printf "$icon_1"
-  elif [[ $value < 20 ]]; then
+  elif [[ $value -lt 20 ]]; then
     printf "$icon_2"
-  elif [[ $value < 30 ]]; then
+  elif [[ $value -lt 30 ]]; then
     printf "$icon_3"
-  elif [[ $strength < 40 ]]; then
+  elif [[ $value -lt 40 ]]; then
     printf "$icon_4"
-  elif [[ $strength < 50 ]]; then
+  elif [[ $value -lt 50 ]]; then
     printf "$icon_5"
-  elif [[ $strength < 60 ]]; then
+  elif [[ $value -lt 60 ]]; then
     printf "$icon_6"
-  elif [[ $strength < 70 ]]; then
+  elif [[ $value -lt 70 ]]; then
     printf "$icon_7"
-  elif [[ $strength < 80 ]]; then
+  elif [[ $value -lt 80 ]]; then
     printf "$icon_8"
-  elif [[ $strength < 100 ]]; then
+  elif [[ $value -lt 100 ]]; then
     printf "$icon_9"
-  elif [[ $strength == 100 ]]; then
+  elif [[ $value == 100 ]]; then
     printf "$icon_10"
   fi
 }
